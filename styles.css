@@ -13,9 +13,10 @@ body {
     user-select: none;
 
     background-color: black;
+    font-family: "Monaco", Times, Monospace;
 
 }
-
+/* 
 footer {
     position: fixed;
     bottom: 0;
@@ -23,13 +24,20 @@ footer {
     padding: 5px;
     color: white;
     background-color: #9DB2BF;
-    width: 175px; /* Adjust the width as per your requirement */
-    height: 100vh; /* Set the height to the full viewport height */
+    width: 175px; 
+    height: 100vh; 
     display: flex;
-    flex-direction: column; /* Display the content vertically */
-    justify-content: flex-end; /* Align the content to the bottom */
+    flex-direction: column;
+    justify-content: flex-end; 
     align-items: center;
     text-align: center;
+} */
+
+header {
+    top: 0;
+    right: 0;
+    padding: 5px;
+    color: rgb(114, 114, 114);
 }
 
 .empty {
@@ -81,7 +89,7 @@ body::-webkit-scrollbar {
 
 a {
     width: 200px;
-    color: rgb(0, 0, 0);
+    color: rgb(114, 114, 114);
     align-items: center;
     justify-content: center;
     display: flex;
@@ -130,7 +138,7 @@ h1 {
 
 .start {
     position: absolute;
-    background-color: #526D82;
+    background-color: #27374D;
     width: 30px;
     height: 30px;
     border-radius: 100%;
