@@ -257,6 +257,7 @@ textBox.addEventListener("keydown", (event) => {
     }
 });
 
+
 // input board
 let boardState = createBoard("");
 // document.body.appendChild(boardState);
