@@ -1,0 +1,135 @@
+body {
+    font-family: monospace, monospace;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+
+    background-color: rgb(0, 0, 0);
+
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    color: white;
+    background-color: #9DB2BF;
+    width: 175px; /* Adjust the width as per your requirement */
+    height: 100vh; /* Set the height to the full viewport height */
+    display: flex;
+    flex-direction: column; /* Display the content vertically */
+    justify-content: flex-end; /* Align the content to the bottom */
+    align-items: center;
+    text-align: center;
+}
+
+.empty {
+    margin-top: 600px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.board_state {
+    background-color: rgb(183, 183, 183);
+    border: 1px black solid;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.tile {
+    text-transform: capitalize;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.moves {
+    margin-left: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 125px;
+}
+
+.board_state {
+    margin: 15px;
+}
+
+/* :not(.tile.highlight) { */
+/* opacity: 30%; */
+/* } */
+
+.tile:not(.highlight) {
+    opacity: 50%;
+}
+
+a {
+    width: 300px;
+    color: white;
+}
+
+input {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+
+    width: 350px;
+    height: 45px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(114, 114, 114);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 250;
+    font-size: 30px;
+    padding: 0px 15px 0px 15px;
+}
+
+input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari/Edge */
+    color: rgb(146, 146, 146);
+}
+
+h1 {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: 100;
+}
+
+.line {
+    position: absolute;
+    background-color: #27374D;
+    height: 8px;
+    filter: brightness(120%);
+    filter: opacity(60%);
+}
+
+.start {
+    position: absolute;
+    background-color: #526D82;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    filter: opacity(50%);
+    transform: translate(-14px, -13px);
+}
