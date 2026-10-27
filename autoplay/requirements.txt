@@ -1,0 +1,3 @@
+pyobjc-framework-Quartz>=10
+pyobjc-framework-Vision>=10
+pytest>=8
